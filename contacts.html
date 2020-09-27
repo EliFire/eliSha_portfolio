@@ -4,113 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ЗП-Контакты</title>
+    <title>AT-contacts</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="container">
-            <header class="header">
-                <ul class="breadcrumbs">
-                    <li><a href=index.html>Главная</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul><a href="tel:+79999999999">+7 999 999 9999</a>
+        <div class="top__content">
+            <header class="header header__contacts">
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li><a href=index.html><img src="./img/logo.svg" alt="logo"></a></li>
+                        <li><a href="contacts.html"><img src="./img/contacts.svg" alt="contacts"></a></li>
+                    </ul>
+                </div>
             </header>
             <div class="about">
-                <h2 class="about__title">Contact us</h2>
-                <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-                    quidem.</p>
+                <div class="container about__text">
+                    <h2 class="about__title">Contact us</h2>
+                    <p class="about__content">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
             </div>
             <div class="connection">
-                <div class="connection__info"><img class="connection__img" src="img/gp.png" alt="logo" width="350px">
-                    <div class="contacts">
-                        <h4 class="contacts__connection">Adress</h4>
-                        <p class="main__content">Lorem ipsum,
-                            dolor sit amet consectetur adipisicing.</p>
+                <div class="container connection__columns">
+                    <div class="connection__info"><img class="connection__img" src="img/call_us.png" alt="contact_us">
+                        <div class="contacts">
+                            <h4 class="contacts__connection contacts__connection-contacts">Adress</h4>
+                            <p class="main__content main__content-contacts">Id convallis placerat sit sed duis id
+                                amet volutpat quam a,
+                                pharetra.</p>
+                        </div>
+                        <div class="contacts">
+                            <h4 class="contacts__connection contacts__connection-contacts">Phone</h4>
+                            <ul class="phone">
+                                <li><a class="phone phone-number" href="tel:+79999999999">+7 999 999 9999</a></li>
+                                <li><a class="phone phone-number" href="tel:+79999999999">+7 999 999 9999</a></li>
+                            </ul>
+                        </div>
+                        <div class="contacts contacts__service">
+                            <h4 class="contacts__connection contacts__connection-contacts">Online service</h4>
+                            <ul class="connect-us">
+                                <li><a class="connect-us connect-us_info" href="index.html">www.site.com</a></li>
+                                <li class="connect__card"><a class="connect-us connect-us_info"
+                                        href="mailto:email@email.ru">email@email.ru</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="contacts">
-                        <h4 class="contacts__connection">Phone</h4>
-                        <ul>
-                            <li><a href="tel:+79999999999">+7 999 999 9999</a></li>
-                            <li><a href="tel:+79999999999">+7 999 999 9999</a></li>
-                        </ul>
-                    </div>
-                    <div class="contacts contacts__service">
-                        <h4 class="contacts__connection">Online service</h4>
-                        <ul>
-                            <li><a href="index.html">Site</a></li>
-                            <li><a href="mailto:email@email.ru">email@email.ru</a></li>
+                    <div class="connection__form">
+                        <h4 class="contacts__connection contacts__connection-form">Send us message</h4>
+                        <ul class="forms">
+                            <form class="forms__action" action="#">
+                                <li class="form__link">
+                                    <p class="forms__question">Full name</p>
+                                    <input class="input input__placeholder" type="text" placeholder="Your Name">
+                                </li>
+                                <li class="form__link">
+                                    <p class="forms__question">Email</p><input class="input input__placeholder"
+                                        type="email" placeholder="Your Email">
+                                </li>
+                                <li class="form__link">
+                                    <p class="forms__question">Message</p><textarea class="input__placeholder"
+                                        placeholder="Your Message"></textarea>
+                                </li><button class="btn btn-forms" type="submit">Submit</button>
+                            </form>
                         </ul>
                     </div>
                 </div>
-                <div class="connection__form">
-                    <h4 class="contacts__connection contacts__connection-form">Send us message</h4>
-                    <div class="forms">
-                        <form class="forms__action" action="#">
-                            <p class="forms main__content">Full name <input class="input" type="text"></p>
-                            <p class="forms main__content">Email <input class="input" type="email"></p>
-                            <p class="forms main__content">Message <textarea class="input" cols="30" rows="10"
-                                    placeholder="Your message"></textarea></p><button class="btn btn-forms"
-                                type="submit">Submit</button>
-                        </form>
-                    </div>
+            </div>
+            <div class="container">
+                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                    <script>(function () {
+                            var setting = {
+                                "height": 480, "max-width": 1100, "zoom": 15, "queryString": "Сенатская площадь, Санкт-Петербург, Россия", "place_id": "Ek7QodC10L3QsNGC0YHQutCw0Y8g0L_Qu9C-0YnQsNC00YwsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8iLiosChQKEgl3_qFXGTGWRhF555F5JK6yhhIUChIJ7WVKx4w3lkYR_46Eqz9nx20", "satellite": false, "centerCoord": [59.936098862101595, 30.304448386260965], "cid": "0x86b2ae247991e779", "lang": "ru", "cityUrl": "/russia/saint-petersburg", "cityAnchorText": "Карта [CITY1], Северо-Западный регион, Россия", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "251579"
+                            }
+
+                                ;
+                            var d = document;
+                            var s = d.createElement('script');
+                            s.src = 'https://1map.com/js/script-for-user.js?embed_id=251579';
+                            s.async = true;
+
+                            s.onload = function (e) {
+                                window.OneMap.initMap(setting)
+                            }
+
+                                ;
+                            var to = d.getElementsByTagName('script')[0];
+                            to.parentNode.insertBefore(s, to);
+                        }
+
+                        )();
+                    </script><a href="https://1map.com/ru/map-embed">1 Map</a>
                 </div>
             </div>
-            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-                <script>(function () {
-                        var setting = {
-                            "height": 500, "max-width": 1100, "zoom": 15, "queryString": "Сенатская площадь, Санкт-Петербург, Россия", "place_id": "Ek7QodC10L3QsNGC0YHQutCw0Y8g0L_Qu9C-0YnQsNC00YwsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8iLiosChQKEgl3_qFXGTGWRhF555F5JK6yhhIUChIJ7WVKx4w3lkYR_46Eqz9nx20", "satellite": false, "centerCoord": [59.936098862101595, 30.304448386260965], "cid": "0x86b2ae247991e779", "lang": "ru", "cityUrl": "/russia/saint-petersburg", "cityAnchorText": "Карта [CITY1], Северо-Западный регион, Россия", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "251579"
-                        }
-
-                            ;
-                        var d = document;
-                        var s = d.createElement('script');
-                        s.src = 'https://1map.com/js/script-for-user.js?embed_id=251579';
-                        s.async = true;
-
-                        s.onload = function (e) {
-                            window.OneMap.initMap(setting)
-                        }
-
-                            ;
-                        var to = d.getElementsByTagName('script')[0];
-                        to.parentNode.insertBefore(s, to);
-                    }
-
-                    )();
-                </script><a href="https://1map.com/ru/map-embed">1 Map</a>
-            </div>
-            <div class="mission">
-                <h3 class="subtitle">Наша миссия:</h3>
-                <p class="main__content">Lorem,
-                    ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-                    debitis.</p>
-            </div>
-            <footer>
+        </div>
+        <footer class="footer">
+            <div class="container">
                 <div class="talking">
                     <div class="talking__text">
-                        <h5 class="talking__title">Lorem ipsum dolor sit amet.</h5>
-                        <p class="talking__info">Lorem ipsum dolor sit,
-                            amet consectetur adipisicing elit. Dicta quam dolor nisi debitis harum? Itaque aliquid
-                            excepturi dolorum delectus ea nam, veniam, assumenda ab, amet impedit recusandae vel
-                            illo
-                            est!</p>
-                    </div>
-                    <button class="btn talking__btn">Talk</button>
+                        <h5 class="talking__title">Intersted to work with our team?</h5>
+                        <p class="talking__info">Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam.</p>
+                    </div><button class="btn talking__btn">Let’s Talk</button>
                 </div>
-                <hr>
-                <p class="main__content footer__title">Свяжитесь с нами !
+            </div>
+            <hr>
+            <div class="container">
                 <ul class="breadcrumbs breadcrumbs-footer">
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li><a href="tel:+79999999999">+7 999 999 9999</a></li>
-                    <li><a href="mailto:email@email.ru">email@email.ru</a></li>
+                    <li class="footer__text">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.</li>
+                    <li class="footer__text"><a class="footer__text" href="tel:+79999999999">+7 999 999 9999</a>
+                    </li>
+                    <li class="footer__text"><a class="footer__text" href="mailto:email@email.ru">email@email.ru</a>
+                    </li>
                 </ul>
-                </p>
-                <p>All rights reserved</p>
-            </footer>
-        </div>
+                <p class="footer__text footer__text_rights">2020 All rights reserved</p>
+            </div>
+        </footer>
     </div>
 </body>
 
